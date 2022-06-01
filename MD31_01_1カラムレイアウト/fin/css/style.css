@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/* グローバル設定 */
+html {
+  font-size: 100%; /* =16px */
+}
+body {
+  min-width: 320px;
+  color: #333;
+  background-color: #333;
+  font-family: "Lato", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体",
+    "Yu Gothic Medium", YuGothic, sans-serif;
+}
+img {
+  max-width: 100%; /* 画像最大幅 */
+  height: auto;
+}
+h2 {
+  margin-bottom: 1rem; /* =16px */
+  font-size: 1.5rem; /* =24px */
+  font-weight: normal;
+  color: #e62f8b;
+}
+p {
+  font-size: 1rem; /* =16px */
+  line-height: 1.75;
+}
+
+/* 外枠設定 */
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+/* ヘッダー */
+.header {
+  margin-top: 0;
+  width: auto;
+  height: 640px;
+  color: #444;
+  background-image: url("../images/header.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  border-bottom: solid 1px #eee;
+}
+.header h1 {
+  color: #fff;
+  visibility: hidden;
+  margin: 0; /* h1の高さ幅要素をなしにする */
+  height: 0;
+}
+
+/* ナビゲーション */
+.nav-main ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.nav-main ul li {
+  width: 25%;
+  padding: 10px 0;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  text-shadow: 2px 2px 2px #000;
+}
+.nav-main ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-main ul li a:hover {
+  color: #aaa;
+}
+
+/* メインコンテンツ */
+.main-contents {
+  height: auto;
+  width: auto;
+  margin: 20px auto 80px auto;
+}
+.article-top {
+  padding: 40px 80px 0 80px;
+}
+
+/* フッター */
+.footer {
+  border-top: solid 1px #eee;
+  width: 960px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .address {
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  text-align: center;
+}
+.footer .address span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e62f8b;
+}
+.footer .copyright {
+  font-size: 0.75rem;
+}
+
+/*Media Queries
+----------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+  /* 600px以下用の記述 */
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  h2 {
+    font-size: 1.125rem; /* =18px */
+  }
+  p {
+    font-size: 0.875rem; /* =14px */
+  }
+
+  .nav-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333;
+  }
+  .nav-main ul li {
+    width: 50%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-size: 0.75rem; /* =12px */
+  }
+  .header {
+    width: 100%;
+    /* 背景の高さを自動的に合わせる方法 */
+    /* paddingで領域を確保 : 表示画像の高さ ÷ 表示画像の幅 × 100 */
+    height: 0;
+    padding-top: 100%;
+    margin-bottom: 80px;
+    background-image: url("../images/header_sp.jpg");
+    background-size: contain;
+  }
+  .article-top {
+    padding: 40px 20px;
+    margin-bottom: -50px;
+  }
+  .footer {
+    width: 100%;
+    background-color: #333;
+  }
+  .footer .address {
+    font-size: 0.625rem; /* =10px */
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .footer .address span {
+    font-size: 1.25rem; /* =20px */
+    font-weight: bold;
+    color: #e62f8b;
+  }
+  .footer .copyright {
+    font-size: 0.625rem; /* =10px */
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
+}

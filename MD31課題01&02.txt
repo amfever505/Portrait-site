@@ -1,0 +1,16 @@
+MD31
+課題No.01デザインカンプ
+課題No.02コーディング完成
+
+テーマ：「自分の好きな服」で1カラムレイアウトのサイトを制作	
+
+締め切り：6/3(4限講評)
+https://drive.google.com/drive/folders/1wXHN59m-JtnMcrfCrnE6M7Yf4a_rVnGH?usp=sharing
+
+フォルダ名&内容
+MD31-課題01-出席番号-名前
+	|- design.jpg（デザインカンプ）
+	|- index.html
+	|- images		
+	|- css
+	|- js
