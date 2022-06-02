@@ -22,7 +22,7 @@ tailwind.config = {
       p: ['1rem', 2],
       'p-sp': ['0.75rem', 1.5],
       lg: ['1.875rem', 1],
-      xl: ['6rem', 1],
+      semil: ['4.5rem', 1],
       xl: ['6rem', 1],
       xxl: ['7.5rem', 1],
       '3l': ['10rem', 1],
