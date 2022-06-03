@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+#top::after {
+  content: 'PORTRAIT in TAIWAN';
+  font-size: 6rem;
+  position: absolute;
+  font-family: Times;
+  top: 67%;
+  mix-blend-mode: difference;
+  color: #fff;
+}
+@media screen and (max-width: 1228px) {
+  #top::after {
+    font-size: 5rem;
+    top: 62%;
+  }
+}
+@media screen and (max-width: 428px) {
+  #top::after {
+    font-size: 4.5rem;
+    top: 75%;
+  }
+}
+
+.scroll {
+  display: flex;
+  overflow: hidden;
+}
+.scroll_txt {
+  white-space: nowrap;
+  text-transform: uppercase;
+  animation: scroll 40s linear infinite;
+}
+.scroll_txt:nth-child(2) {
+  animation: scroll2 40s linear infinite;
+  animation-delay: -20s;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
