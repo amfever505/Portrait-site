@@ -15,6 +15,12 @@
     top: 62%;
   }
 }
+@media screen and (max-width: 428px) {
+  #top::after {
+    font-size: 4.5rem;
+    top: 75%;
+  }
+}
 
 .scroll {
   display: flex;
