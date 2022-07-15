@@ -1,0 +1,493 @@
+@charset "utf-8";
+html{
+  font-family: 'ヒラギノ角ゴ Pro W3'
+  'Hiragino Kaku Gothic Pro';
+  font-weight: 900;
+  background-color: #E6DCD4;
+  color: #37322D;
+  font-size: 10px;
+}
+body{
+  background-color: #E6DCD4;
+  /* min-width: 1024px; */
+}
+h1,h2,p,a{
+  font-weight: 900;
+}
+.wrapper{
+overflow: hidden;
+}
+
+/* モバイルファーストのデザイン */
+  .main_visual{
+    position: relative;
+  }
+  .main_visual img{
+    height: 100vh;
+    width: 100vw;
+    object-fit :cover;
+    display: flex;
+    filter: brightness(80%);
+    text-align: center;
+  }
+  .title h1{
+    font-size: 1.75rem;
+    font-weight: 900;
+  }
+  .sub_title{
+    font-size: .75rem;
+  }
+  .title_wrapper{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    text-align: center;
+    /* font-weight: 900; */
+  }
+  .introduction{
+    writing-mode: vertical-rl;
+    margin: 5rem auto auto;
+  }
+  .introduction h1{
+    width: 50%;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-left: 0 2rem;
+    /* letter-spacing: 1rem; */
+  }
+  .introduction p{
+    margin-left: -2rem;
+    margin-right: 2rem;
+    font-weight: 900;
+  }
+  .introduction_text{
+    padding: 30px 10% 3rem 10%;
+  }
+  .introduction_text h2{
+    font-size: 2.3rem;
+    margin: 2rem 0;
+    font-weight: 600;
+  }
+  .introduction_text p{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 900;
+  }
+  .pick_up{
+    padding-right: 2rem;
+    margin-bottom: 6rem;
+  }
+  .pick_up img{
+    width: 100%;
+    height: 50vh;
+    z-index: 0;
+    bottom: 0;
+    object-fit :cover;
+  }
+   .pick_up .pick_up_title{
+    position:relative;
+    border-top: 5rem solid #E6DCD4;
+    top: -3rem;
+    width: 45%;
+    padding-left: 10%;
+    margin-right: 30%;
+    font-size: 0.5rem;
+    /* border-bottom: #37322D solid 1px; */
+
+  }
+  .others_title{
+    padding-left: 10%;
+    padding-bottom: 2px;
+    /* border-bottom: #37322D solid 1px; */
+  }
+  .pick_up h1{
+    padding-left: 10%;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  .pick_up h2{
+    padding-left: 10%;
+    font-size: 1.1rem;
+    margin: 3.3rem 0;
+  }
+  .pick_up p{
+    padding-left: 10%;
+    font-size: .8rem;
+    line-height: 2rem;
+  }
+  .border_box{
+    height: 1px;
+    margin-left: 10%;
+    margin-right: 75%;
+    background-color: #37322D;
+    top: -45px;
+    position: relative;
+  }
+  .border_box_o{
+    height: 1px;
+    margin-left: 10%;
+    margin-right: 70%;
+    background-color: #37322D;
+    /* top: -110px; */
+    position: relative;
+  }
+  .card_wrapper{
+    padding: 0 10% 120px 10%;
+    margin: 0 auto;
+    width: 90%;
+    gap: 30rem;
+  }
+  .card{
+    border: 0;
+    margin-top: 2.5rem;
+  }
+  .card-text{
+    font-size: 0.7rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+  }
+  .card img{
+    object-fit: cover;
+    filter: brightness(80%);
+    z-index: 500;
+    /* position: absolute; */
+
+  }
+  .card h2{
+    /* position: relative; */
+    padding-left: 20px;
+    color: white;
+    margin-top: -10.5rem;
+    margin-bottom: 9rem;
+    font-size: 1rem;
+    z-index: 800;
+  }
+
+.sea_wrapper{
+  width: 100vw;
+  height: 920px;
+  object-fit: cover;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.sea_text{
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  text-align: center;
+}
+.sea_wrapper img{
+  height: 580px;
+  width: 100%;
+  object-fit: cover;
+  text-align: center;
+  filter: brightness(80%);
+}
+.sea_wrapper h3{
+  /* width: 3; */
+font-size: 1rem;
+margin: 4rem 40%;
+padding-bottom: 3%;
+border-bottom: 1px solid;
+}
+.sea_wrapper h1{
+  font-size: 1.7rem;
+  margin-bottom: 6.3rem;
+  font-weight: bold;
+}
+.sea_wrapper p{
+font-weight: 600;
+line-height: 2rem;
+padding: 0 6%;
+
+}
+.final_word{
+  writing-mode: vertical-rl;
+  margin: 9rem auto;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  color: #37322D;
+  height: 450px;
+}
+.line2{
+  margin-top: 12rem;
+}
+
+
+  footer{
+    background-color: #D1C5BA;
+    height: 28vh;
+    text-align: center;
+    padding-top: 43%;
+    /* margin-top: 10rem; */
+  }
+  footer small{
+    font-size: .2rem;
+  }
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  body{
+    padding-right: 116px;
+    color: #37322D;
+
+  }
+  #navArea{
+    display: none;
+  }
+  .right_nav{
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 116px;
+    height: 100%;
+    padding: 80px 0 0 0;
+    background-color: #DDD1C6;
+    color: #37322D;
+    letter-spacing: 0rem;
+    text-decoration: none;
+    
+  }
+  .right_nav a:hover{
+    color: #aa6826;
+    text-decoration: none;
+  }
+  .right_nav ul{
+    padding: 0;
+    padding: 1.8rem;
+  }
+  .right_nav h1{
+    writing-mode: vertical-rl;
+    font-weight: 900;
+    margin: 0 auto 140px;
+    letter-spacing: .5rem;
+
+  }
+  .right_nav li,a{
+    color: #37322D;
+    font-size: .8rem;
+    font-weight: 700;
+    padding-bottom: .8rem;
+  }
+  .main_visual img{
+    width: 100%;
+    z-index: 900;
+    /* margin: -85px; */
+  }
+  .main_visual h1{
+    font-size: 5rem;
+  }
+  .main_visual h2{
+    font-size: 2rem;
+  }
+  .title_wrapper{
+    padding-right: 10%;
+  }
+  .pick_up img{
+    height: 100vh;
+    width: 100vw;
+    padding-right: 10%;
+  }
+  .pick_up .pick_up_title{
+    border-top: 9rem solid #E6DCD4;
+    top: -7rem;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 70%;
+  }
+  .others_title{
+    font-size: 1rem;
+    font-weight: 800;
+    width: 70%;
+    padding-left: 10%;
+    margin-top: 200px;
+
+  }
+
+  .pick_up h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: -3rem;
+  }
+  .pick_up h2{
+    padding-left: 10%;
+    font-size: 1.7rem;
+    font-weight: 900;
+    margin: 3.3rem 0 2.2rem 0;
+  }
+  .pick_up p{
+    padding-left: 10%;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 900;
+    width: 55%;
+  }
+
+  .card_wrapper{
+    padding-left: 10%;
+    padding-right: 14%;
+    padding-bottom: 200px;
+    gap:  5%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card{
+    border: 0;
+    margin-top: 2.5rem;
+    width: 30%;
+    border-radius: 5px;
+  }
+  .card-text{
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    color: #37322D;
+    padding: 2%;
+  }
+  .card img{
+    object-fit: cover;
+    filter: brightness(80%);
+    z-index: 500;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .card h2{
+    padding-left: 20px;
+    color: white;
+    margin-top: -10.5rem;
+    margin-bottom: 9rem;
+    font-size: 1rem;
+    z-index: 800;
+  }
+
+
+  .introduction_wrapper{
+    display: flex;
+  }
+  .introduction{
+    writing-mode: vertical-rl;
+    margin: 0 0 0 0rem;
+    width: 38%;
+  }
+  .introduction h1{
+    font-size: 6rem;
+    font-weight: 900;
+    margin-top: 180px;
+    height: 600px;
+    width: auto;
+  }
+  .introduction p{
+    margin-right: 4%;
+    margin-top: 250px;
+    font-weight: 900;
+  }
+  .introduction_text{
+    width: 52%;
+    margin-left: -2rem;
+    padding-top: 206px;
+    padding-bottom: 280px;
+  }
+  .introduction_text h2{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+  }
+  .introduction_text p{
+    font-size: 1.3rem;
+    line-height: 3rem;
+    font-weight: 900;
+    letter-spacing: .05rem;
+  }
+
+  .sea_text{
+    padding-right: 9%;
+    padding-top: 5rem;
+  }
+  .sea_text h1{
+    font-size: 3rem;
+    margin-bottom: 6rem;
+  }
+  .sea_text p{
+    padding: 0 25%;
+    font-size: .9rem;
+
+  }
+  .sea_wrapper h3{
+    /* width: 3; */
+  font-size: 1rem;
+  margin: 3rem 45%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid;
+  }
+  
+.final_word{
+  margin: 12rem auto;
+  line-height: 7rem;
+  font-size: 2rem;
+  height: 660px;
+  padding-right: 9%;
+}
+.line2{
+  margin-top: 17rem;
+}
+
+
+
+.border_box{
+  height: 1px;
+  margin-left: 10%;
+  margin-right: 75%;
+  background-color: #37322D;
+  top: -110px;
+  position: relative;
+}
+.border_box_o{
+  height: 1px;
+  margin-left: 10%;
+  margin-right: 75%;
+  background-color: #37322D;
+  /* top: -110px; */
+  position: relative;
+}
+
+  footer{
+    padding: 0;
+    padding-right: 9%;
+    position: relative;
+  }
+  footer small{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 100px auto;
+    width: 80%;
+    height: 1rem;
+
+  }
+}  
+
+
+
+
+
+
+
+
+
+
+  

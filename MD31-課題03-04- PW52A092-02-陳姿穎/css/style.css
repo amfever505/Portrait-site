@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+/* スマートフォンファースト制作 */
+/*
+--copper-penny: #A5726E;
+--liver-organ: z;
+--lavender-blush: #F5E8E8;
+--pewter-blue: #88A9B0;
+--dark-slate-gray: #2D5955;
+--beau-blue: #C1D5EB;
+*/
+/*初期設定
+----------------------------------------------------*/
+/* @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=M+PLUS+Rounded+1c&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Zen Antique Soft', serif;
+  background: #fffbe6;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: cover;
+  scrollbar-width: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*レイアウト・スマートフォン用・モバイルファースト
+----------------------------------------------------*/
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+.wrapper p {
+  line-height: 2;
+}
+.mv-box {
+  background-image: url(../img/mv.jpg);
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+header p {
+  position: absolute;
+  top: 1rem;
+  font-size: 1.7rem;
+  right: 20%;
+  writing-mode: vertical-rl;
+  mix-blend-mode: difference;
+  color: #6c241a;
+}
+section {
+  margin: 5rem 0;
+}
+h2,
+section img,
+section p {
+  margin-bottom: 1rem;
+}
+h1 {
+  position: relative;
+  color: #6c241a;
+  margin-bottom: 2rem;
+}
+h1 span {
+  position: absolute;
+  mix-blend-mode: difference;
+  left: 0;
+  top: -1.5rem;
+}
+p {
+  line-height: 1.5;
+}
+/* map */
+#map {
+  width: 100%;
+  background: #fcfcfc;
+  /* 一番上に固定 */
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  opacity: 0;
+  height: 0;
+  transition: 0.3s all ease;
+}
+#map.on {
+  opacity: 1;
+  height: auto;
+}
+#map.off {
+  opacity: 0;
+  height: 0;
+}
+#map .wrapper {
+  margin: 3rem auto;
+}
+#map-switch {
+  width: 100%;
+  height: 2rem;
+  margin: 1rem 0 0 0;
+  display: flex;
+  writing-mode: vertical-lr;
+  align-items: center;
+}
+
+#map h1 span {
+  color: #6c241a;
+  mix-blend-mode: color-burn;
+}
+#map iframe {
+  margin: 2rem 0 1rem 0;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+/*Media Queries
+----------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  header {
+    padding: 6rem 0;
+    height: 100vh;
+  }
+  header p {
+    top: 5%;
+    right: 15%;
+    font-size: 3rem;
+  }
+  .mv-box {
+    width: 90%;
+    max-width: 1200px;
+  }
+  main {
+    display: flex;
+  }
+  #map {
+    position: relative;
+    opacity: 1;
+  }
+  #map.col-left,
+  main .col-right {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+  }
+  #map-switch {
+    display: none;
+  }
+  .wrapper {
+    max-width: 560px;
+  }
+  #map iframe {
+    aspect-ratio: 4/5;
+  }
+}
