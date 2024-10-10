@@ -17,7 +17,7 @@
 }
 @media screen and (max-width: 428px) {
   #top::after {
-    font-size: 4.5rem;
+    font-size: 4rem;
     top: 75%;
   }
 }
